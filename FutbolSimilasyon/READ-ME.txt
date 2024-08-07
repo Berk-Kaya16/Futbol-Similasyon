@@ -1,0 +1,112 @@
+Futbol Ligi simülasyonu.
+1.	18 takımdan oluşan bir futbol ligi kurulacaktır.
+2.	Her takımda 25 futbolcu bulundurulacaktır. Futbolcular sadece bir pozisyonda oynayabilmek şartıyla. Hücum, Ortasaha, Savunma ve Kale olmak üzere 4 farklı pozisyon olmalıdır. 25 futbolcudan 3 tanesi kaleci, 10 tanesi Savunma oyuncusu,  6 tanesi ortasaha oyuncusu ve 6 tanesi ise hücum oyuncusu olacaktır.
+3.	Her oyuncunun Fiziksel, Mental, Teknik ve Kalecilik Becerisi başlıkları altında toplanmış 1-20 arasında puanlanmış özellikleri olacaktır.  Oyuncuların özellik puanları oynadıkları pozisyonlara göre belirlenecektir. Bu özelliklerinden her oyuncunun kendi pozisyonu için ortalama gücü hesaplanacak ve böylece her pozisyon için takımların güçleri de hesaplanarak sonunda bir takım gücü elde edilecektir. 
+4.	Tüm takımlar ortalama güçleri, savunma güçleri, hücum güçleri, ortasaha güçleri, kalecilik güçleri ve taraftar güçleri de olacak şekilde konsola yazdırlacak.
+5.	Takımlar ve oyuncular hazırlandıktan sonra, lig için fixtür çekimi yapılacaktır. Fixtür sonucunda her takım birbiri ile hem kendi evinde hem de deplasmanda oynayacaktır. Kendi evindeki maçlarda taraftar gücü de dikkate alınacaktır.
+6.	Fixtür çekimi sonucunda tüm haftaların maçları ayrı ayrı konsola yazdırılacak.
+7.	Fixtür çekimi başladıktan sonra hafta hafta maçlar oynatılacak ve her haftanın maç sonuçları haftalık güncel puan durumu ile birlikte ekrana yazdırılacak. Puan durumunda sıralama yaparken öncelik sırası: toplanan puanlar, genel averaj (atılan gol- yenilen gol), atılan gol, alınan galibiyet. Şeklinde olacaktır.
+8.	Dikkat edilmesi gereken husus, gücü yüksek olan takım favoridir fakat her zaman galip gelmemelidir. Maç sonuçlarında gerçekçi skorlar çıkmalıdır örn. 2-2, 2-0, 1-3, 1-0, 0-0…
+9.	Herhangi bir veri tutmayacağız, program çalışınca tüm veriler random oluşacak.
+
+ÖRNEK ÇIKTI 
+1. hafta maçları
+Mvmfguwony vs Ckajuluolu
+Edqvaswkwy vs Mhqkhmttmh
+Ujbmyajysd vs Gbdtkbtphk
+Qactepcsbb vs Rxnkqieajw
+Rpxuxiwjod vs Yboifgkycg
+Kurexideha vs Lubfspnnba
+Axptilhefd vs Iotvtniqea
+Rpjcjppbcf vs Gnrbkspnnq
+Hcbmrstdqd vs Nudbpwgmoa
+  
+  
+1. hafta maç sonuçları
+Mvmfguwony 0 vs 0 Ckajuluolu
+Edqvaswkwy 0 vs 0 Mhqkhmttmh
+Ujbmyajysd 0 vs 1 Gbdtkbtphk
+Qactepcsbb 0 vs 0 Rxnkqieajw
+Rpxuxiwjod 1 vs 2 Yboifgkycg
+Kurexideha 2 vs 1 Lubfspnnba
+Axptilhefd 1 vs 0 Iotvtniqea
+Rpjcjppbcf 0 vs 0 Gnrbkspnnq
+Hcbmrstdqd 0 vs 3 Nudbpwgmoa
+  
+  
+1. hafta puan sıralaması 
+Güç  İsim     Maç İstatistikleri
+48 Nudbpwgmoa O:1 G:1 B:0 M:0 A:3 Y:0 AVG:3 P:3
+42 Yboifgkycg O:1 G:1 B:0 M:0 A:2 Y:1 AVG:1 P:3
+54 Kurexideha O:1 G:1 B:0 M:0 A:2 Y:1 AVG:1 P:3
+46 Gbdtkbtphk O:1 G:1 B:0 M:0 A:1 Y:0 AVG:1 P:3
+44 Axptilhefd O:1 G:1 B:0 M:0 A:1 Y:0 AVG:1 P:3
+44 Mhqkhmttmh O:1 G:0 B:1 M:0 A:0 Y:0 AVG:0 P:1
+52 Gnrbkspnnq O:1 G:0 B:1 M:0 A:0 Y:0 AVG:0 P:1
+51 Qactepcsbb O:1 G:0 B:1 M:0 A:0 Y:0 AVG:0 P:1
+36 Rxnkqieajw O:1 G:0 B:1 M:0 A:0 Y:0 AVG:0 P:1
+43 Edqvaswkwy O:1 G:0 B:1 M:0 A:0 Y:0 AVG:0 P:1
+48 Ckajuluolu O:1 G:0 B:1 M:0 A:0 Y:0 AVG:0 P:1
+51 Mvmfguwony O:1 G:0 B:1 M:0 A:0 Y:0 AVG:0 P:1
+50 Rpjcjppbcf O:1 G:0 B:1 M:0 A:0 Y:0 AVG:0 P:1
+35 Lubfspnnba O:1 G:0 B:0 M:1 A:1 Y:2 AVG:-1 P:0
+57 Rpxuxiwjod O:1 G:0 B:0 M:1 A:1 Y:2 AVG:-1 P:0
+43 Ujbmyajysd O:1 G:0 B:0 M:1 A:0 Y:1 AVG:-1 P:0
+48 Iotvtniqea O:1 G:0 B:0 M:1 A:0 Y:1 AVG:-1 P:0
+59 Hcbmrstdqd O:1 G:0 B:0 M:1 A:0 Y:3 AVG:-3 P:0
+  
+  
+
+
+
+
+
+
+2. hafta maçları
+Mvmfguwony vs Mhqkhmttmh
+Ckajuluolu vs Gbdtkbtphk
+Edqvaswkwy vs Rxnkqieajw
+Ujbmyajysd vs Yboifgkycg
+Qactepcsbb vs Lubfspnnba
+Rpxuxiwjod vs Iotvtniqea
+Kurexideha vs Gnrbkspnnq
+Axptilhefd vs Nudbpwgmoa
+Rpjcjppbcf vs Hcbmrstdqd
+  
+  
+2. hafta maç sonuçları
+Mvmfguwony 0 vs 1 Mhqkhmttmh
+Ckajuluolu 0 vs 0 Gbdtkbtphk
+Edqvaswkwy 0 vs 1 Rxnkqieajw
+Ujbmyajysd 0 vs 0 Yboifgkycg
+Qactepcsbb 1 vs 2 Lubfspnnba
+Rpxuxiwjod 0 vs 0 Iotvtniqea
+Kurexideha 10 vs 0 Gnrbkspnnq
+Axptilhefd 0 vs 0 Nudbpwgmoa
+Rpjcjppbcf 5 vs 1 Hcbmrstdqd
+  
+  
+2. hafta puan sıralaması 
+Güç  İsim     Maç İstatistikleri
+49 Kurexideha O:2 G:2 B:0 M:0 A:12 Y:1 AVG:11 P:6
+65 Rpjcjppbcf O:2 G:1 B:1 M:0 A:5 Y:1 AVG:4 P:4
+40 Nudbpwgmoa O:2 G:1 B:1 M:0 A:3 Y:0 AVG:3 P:4
+41 Yboifgkycg O:2 G:1 B:1 M:0 A:2 Y:1 AVG:1 P:4
+38 Gbdtkbtphk O:2 G:1 B:1 M:0 A:1 Y:0 AVG:1 P:4
+48 Axptilhefd O:2 G:1 B:1 M:0 A:1 Y:0 AVG:1 P:4
+38 Rxnkqieajw O:2 G:1 B:1 M:0 A:1 Y:0 AVG:1 P:4
+36 Mhqkhmttmh O:2 G:1 B:1 M:0 A:1 Y:0 AVG:1 P:4
+41 Lubfspnnba O:2 G:1 B:0 M:1 A:3 Y:3 AVG:0 P:3
+47 Ckajuluolu O:2 G:0 B:2 M:0 A:0 Y:0 AVG:0 P:2
+59 Qactepcsbb O:2 G:0 B:1 M:1 A:1 Y:2 AVG:-1 P:1
+45 Rpxuxiwjod O:2 G:0 B:1 M:1 A:1 Y:2 AVG:-1 P:1
+58 Edqvaswkwy O:2 G:0 B:1 M:1 A:0 Y:1 AVG:-1 P:1
+47 Iotvtniqea O:2 G:0 B:1 M:1 A:0 Y:1 AVG:-1 P:1
+63 Mvmfguwony O:2 G:0 B:1 M:1 A:0 Y:1 AVG:-1 P:1
+43 Ujbmyajysd O:2 G:0 B:1 M:1 A:0 Y:1 AVG:-1 P:1
+43 Gnrbkspnnq O:2 G:0 B:1 M:1 A:0 Y:10 AVG:-10 P:1
+52 Hcbmrstdqd O:2 G:0 B:0 M:2 A:1 Y:8 AVG:-7 P:0
+  
+  
+34. Hafta bu şekilde devam eder.
+
